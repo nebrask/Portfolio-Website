@@ -1,0 +1,410 @@
+/* Global styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 64px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 22px;
+}
+
+p {
+  font-size: 20px;
+}
+
+a {
+  color: #4169E1;
+  text-decoration: none;
+}
+
+ul {
+  font-size: 20px;
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+.highlight {
+  color: #1E90FF;
+}
+
+/* Main content wrapper styling */
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 25px;
+}
+
+/* Navigation bar styling */
+header {
+  background-color: #00A897;
+  color: #000000;
+  padding: 10px;
+}
+
+nav a {
+  color: #000000;
+  padding: 5px 10px;
+}
+
+nav a:hover {
+  background-color: #4CD3BF;
+  color: #888888;
+  border-radius: 5px;
+}
+
+/* Home page center styling */
+.home {
+  text-align: center;
+}
+
+/* Home page styling */
+.home-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.home-text {
+  max-width: 600px;
+  text-align: left;
+  margin-right: 20px;
+}
+
+.home-image {
+  flex: 1;
+  text-align: right;
+  max-width: 100%;
+  border-radius: 28%;
+}
+
+.home-image img {
+  max-width: 100%;
+  border-radius: 28%;
+}
+
+/* About me page styling */
+.slideshow-container {
+  max-width: 650px;
+  position: relative;
+  margin: auto;
+  height: 400px;
+}
+
+.slideshow-container img {
+  height: 400px;
+}
+
+/* Left and right manual slide transistion styling*/
+.previous,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-size: 25px;
+  transition: 0.6s ease;
+  border-radius: 0 5px 5px 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.previous:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+  text-align: center;
+}
+
+.slide {
+  display: none;
+}
+
+/* Indicator styling*/
+.indicator {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #00CED1;
+  border-radius: 100%;
+  display: inline-block;
+  transition: 0.6s ease;
+  margin-top: 25px;
+}
+
+.active,
+.indicator:hover {
+  background-color: #00A4A7;
+}
+
+/* Fade animation for the slide transitions */
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .2
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+/* Education page styling */
+#education table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#education th,
+td {
+  padding: 10px;
+  border: 1px solid #D3D3D3;
+}
+
+#map {
+  height: 450px;
+  margin-top: 25px;
+}
+
+/* Experience page styling */
+#experience .work-experience {
+  margin-bottom: 60px;
+}
+
+#experience .work-experience img {
+  float: right;
+  margin-left: 30px;
+  border-radius: 50%;
+  margin-top: -40px;
+}
+
+/* Projects page styling */
+#projects .project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#projects .project {
+  width: calc(33.33% - 20px);
+  margin: 10px;
+  text-align: center;
+}
+
+#projects .project-name:hover {
+  color: #1E90FF;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#projects .project img {
+  width: 75%;
+  height: 400px;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Flip card styling of project page */
+.inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.front {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  transform: rotateY(0deg);
+}
+
+.behind {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+
+.flip-card.active .inner {
+  transform: rotateY(180deg);
+}
+
+/*Search bar styling of project page*/
+.tech-stack {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.search-container {
+  text-align: center;
+  margin-top: 500px;
+  margin-bottom: 170px;
+}
+
+.search-heading {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #FFDF00;
+}
+
+#searchbar {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  margin: 15px auto;
+  font-family: Inter, sans-serif;
+  border-radius: 5px;
+  border: 1px solid #808080;
+}
+
+/* Contact page styling */
+#contact-form {
+  display: flex;
+  justify-content: center;
+}
+
+#contact-form .form-group {
+  margin-bottom: 25px;
+  position: relative;
+}
+
+#contact-form input,
+#contact-form textarea {
+  display: block;
+  width: 550px;
+  padding: 10px;
+  font-family: Inter, sans-serif;
+  border-radius: 5px;
+  border: 1px solid #808080;
+  resize: vertical;
+  flex: none;
+}
+
+/* Invalid inputs styling */
+.error-message {
+  color: #FF0000;
+  font-size: 14px;
+  margin: 2px 0;
+  position: absolute;
+}
+
+.error-field {
+  box-shadow: 0 0 5px #FF0000;
+}
+
+/* Submit button styling */
+#contact-form input[type="submit"] {
+  width: auto;
+  margin-top: 50px;
+  padding: 10px 20px;
+  font-size: 15px;
+  background-color: #00CED1;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+}
+
+#contact-form input[type="submit"]:hover {
+  background-color: #00A4A7;
+}
+
+/* Facebook share button styling */
+#submit-button {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.share {
+  float: right;
+  margin-top: -51px;
+}
+
+/* Social section styling */
+#social h2 {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.social-links a {
+  display: inline-block;
+  transition: transform 0.4s ease;
+}
+
+.social-links a:hover {
+  transform: scale(1.1);
+}
+
+.social-links {
+  text-align: center;
+}
+
+.social-links img {
+  margin: 5px;
+  width: 55px;
+  height: 55px;
+}
+
+/* 404 page styling */
+#error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#error p {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#error a:hover {
+  text-decoration: underline;
+}
+
+/*
+Resources:
+- https://www.w3schools.com/CSS/default.asp
+- https://www.w3schools.com/howto/howto_css_flip_card.asp
+- https://www.freecodecamp.org/news/how-to-create-a-slideshow/
+- https://www.w3schools.com/howto/howto_js_filter_lists.asp
+- https://www.youtube.com/watch?v=uQfKJjqToTo
+- https://developers.facebook.com/docs/plugins/share-button/
+- https://stackoverflow.com/questions/15092413/facebook-share-button-in-iframes
+- https://stackoverflow.com/questions/16463030/how-to-add-facebook-share-button-on-my-website
+- https://developers.google.com/maps/documentation/javascript/tutorials
+- https://developer.mozilla.org/en-US/docs/Web/CSS/transform-style
+*/

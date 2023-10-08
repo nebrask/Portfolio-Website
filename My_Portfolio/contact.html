@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="./scripts/formValidation.js"></script>
+</head>
+
+<body>
+  <header>
+    <!--Navigation bar-->
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="education.html">Education</a>
+      <a href="experience.html">Experience</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <div id="about" class="content-wrapper">
+    <h1>Contact Me</h1>
+    <!--Form for user to contact me and verify if inputs are valid-->
+    <div id="contact-form">
+      <form>
+        <div class="form-group">
+          <input type="text" id="name" name="name" placeholder="Name" required>
+          <div class="error-message" id="name-error"></div>
+        </div>
+        <div class="form-group">
+          <input type="text" id="Email" name="Email" placeholder="Email" required>
+          <div class="error-message" id="email-error"></div>
+        </div>
+        <div class="form-group">
+          <input type="text" id="phone" name="phone" placeholder="Phone Number" required>
+          <div class="error-message" id="phone-error"></div>
+        </div>
+        <div class="form-group">
+          <textarea id="message" name="message" placeholder="Message" rows="5" required></textarea>
+          <div class="error-message" id="message-error"></div>
+        </div>
+        <div class="form-group">
+          <div class="button-container">
+            <input type="submit" value="Submit" id="submit-button">
+            <!-- Facebook share button for user to share the website-->
+            <div class="share">
+              <iframe
+                src="https://www.facebook.com/plugins/share_button.php?href=https://landing.athabascau.ca/file/owner/nebraskh&layout=button&size=large&appId=1471001923731865"
+                width="80" height="40" style="border:none;overflow:hidden;border-radius:5px;" frameborder="0"
+                allowTransparency="true" allow="encrypted-media"></iframe>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!--Section for users to go to my socials-->
+    <div id="social">
+      <h2>Social</h2>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/nebraskhan/">
+          <img src="images/linkedin.png" alt="LinkedIn">
+        </a>
+        <a href="mailto:nkhan20@learn.athabascau.ca">
+          <img src="images/mail.png" alt="Email">
+        </a>
+        <a href="https://github.com/nebrask">
+          <img src="images/github.png" alt="GitHub">
+        </a>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
+
+<!--
+Resources:
+- https://www.youtube.com/watch?v=uQfKJjqToTo
+- https://commons.wikimedia.org/wiki/File:LinkedIn_icon_circle.svg
+- https://icon-library.com/png/161578.html
+- https://github.com/logos
+- https://developers.facebook.com/docs/javascript/quickstart/
+- https://developers.facebook.com/docs/plugins/share-button/
+- https://stackoverflow.com/questions/15092413/facebook-share-button-in-iframes
+- https://stackoverflow.com/questions/16463030/how-to-add-facebook-share-button-on-my-website 
+-->

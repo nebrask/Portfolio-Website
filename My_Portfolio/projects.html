@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Projects</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <!--Navigation bar-->
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="education.html">Education</a>
+      <a href="experience.html">Experience</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div id="projects">
+    <h1>Projects</h1>
+    <!--Flip card section of projects -->
+    <div class="project-container">
+      <div class="project">
+        <h2 class="project-name"><a href="#eventme" class="highlight project-trigger">EventMe</a></h2>
+        <div class="flip-card">
+          <div class="inner">
+            <div class="front">
+              <img src="images/eventme.png" alt="EventMe Project">
+            </div>
+            <div class="behind">
+              <p>Date Created: August, 2022</p>
+              <p>Collaborators: Arush</p>
+              <p>Description: Created personalized events suggestions web app utilizing users provided location
+                to produce local events on a map, and direct users to chosen event location.</p>
+              <p>What I Learned: Working on front End development and creating a site that is visually appealing.
+                Learned more about api integration and deploying app in Heroku. </p>
+              <a href=https://github.com/nebrask/EventMe><img src="images/github.png" alt="GitHub Repository"
+                  style="width: 50px; height: auto; box-shadow: none;"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="project">
+        <h2 class="project-name"><a href="#medicount" class="highlight project-trigger">MediCount</a></h2>
+        <div class="flip-card">
+          <div class="inner">
+            <div class="front">
+              <img src="images/medicount.png" alt="EventMe Project">
+            </div>
+            <div class="behind">
+              <p>Date Created: Present</p>
+              <p>Collaborators: None</p>
+              <p>Description: Developing a specialized medication tracking app for elder family members, with a
+                focus on improving adherence and safety through user-friendly features.
+              </p>
+              <p>What I am Learning: How to create a user friendly mobile based app and learning how to design
+                technology solution with a specific user demographic in mind.</p>
+              <a href=https://github.com/nebrask/MediCount><img src="images/github.png" alt="GitHub Repository"
+                  style="width: 50px; height: auto; box-shadow: none;"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="project">
+        <h2 class="project-name"><a href="#eventme" class="highlight project-trigger">MGT Marketplace</a></h2>
+        <div class="flip-card">
+          <div class="inner">
+            <div class="front">
+              <img src="images/magenta_tiger_icon.png" alt="EventMe Project">
+            </div>
+            <div class="behind">
+              <p>Date Created: June, 2023</p>
+              <p>Collaborators: Vladyslav, Josh, Majeed</p>
+              <p>Description: Collaborated with the Magenta Tiger team to design and develop an marketplace
+                app including key features
+                such as user authentication, product listings, and payment processing.</p>
+              <p>What I Learned: Ecommerce concepts and properly intergrating user authentication. I also learned how to
+                communicate effectively with others and in delegating tasks. </p>
+              <a href=https://github.com/Hack-Weekly/magenta-tiger-ecommerce-app><img src="images/github.png"
+                  alt="GitHub Repository" style="width: 50px; height: auto; box-shadow: none;"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Search bar section of identifying programming languages, tools or technologies associated with a project -->
+  <div class="search-container">
+    <h4 class="search-heading">Search a specific programming languages, tools or technologies that I used for the
+      projects!</h4>
+
+    <input id="searchbar" onkeyup="searchProjects()" type="text" name="search" placeholder="Search projects">
+    <ul id="search-results" class="tech-stack"></ul>
+  </div>
+  <script src="./scripts/projectDetail.js"></script>
+</body>
+
+</html>
+
+<!--
+Resources:
+- https://www.geeksforgeeks.org/search-bar-using-html-css-and-javascript/
+- https://www.w3schools.com/howto/howto_css_flip_card.asp
+- https://www.w3schools.com/howto/howto_js_filter_lists.asp
+- https://dev.to/am20dipi/how-to-build-a-simple-search-bar-in-javascript-4onf
+- Search bar for my projects inspired from: https://landing.athabascau.ca/blog/view/12852892/unit-5-design-doc
+- https://www.flaticon.com/free-icon/pills_6642783
+- https://www.flaticon.com/free-icon/party_415552
+- https://github.com/logos
+-->

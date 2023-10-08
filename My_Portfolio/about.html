@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>About Me</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <!--Navigation bar-->
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="education.html">Education</a>
+      <a href="experience.html">Experience</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div id="about" class="content-wrapper">
+    <h1>About Me</h1>
+    <!--List of my hobbies-->
+    <div id="hobbies">
+      <h2>Hobbies</h2>
+      <ul>
+        <li>I enjoy playing basketball and badminton, embracing teamwork and discipline.</li>
+        <li>Movies, from comedy to Marvel and DC films, captivate me with their storytelling and visuals.</li>
+        <li>I love reading mystery, science fiction, history, and adventure genres, fueling my curiosity and broadening
+          my perspective.</li>
+      </ul>
+    </div>
+    <!--Slide show section for related image displayment of my hobbies-->
+    <div class="slideshow-container">
+      <div class="slide fade">
+        <img src="images\basketball.jpg" style="width:100%">
+        <div class="text">Image of basketball court I play at</div>
+      </div>
+      <div class="slide fade">
+        <img src="images\theatre.jpg" style="width:100%">
+        <div class="text">Movie theater I often frequent to watch movies</div>
+      </div>
+      <div class="slide fade">
+        <img src="images\book.jpg" style="width:100%">
+        <div class="text">A book I recently finished and one my favourites</div>
+      </div>
+      <a class="previous" onclick="moveSlides(-1)">&#10094;</a>
+      <a class="next" onclick="moveSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+      <span class="indicator" onclick="presentSlide(1)"></span>
+      <span class="indicator" onclick="presentSlide(2)"></span>
+      <span class="indicator" onclick="presentSlide(3)"></span>
+    </div>
+    <!--Description of my interests and what I would want to pursue as my future career-->
+    <div id="interests">
+      <h2>Interests</h2>
+      <p>
+        I'm passionate about technology and programming, with an interest in AI and its ability to help improve lives.
+        Web Development interests me as I can create interactive and user-friendly web experiences, while Product
+        Management
+        intrigues me as it drives innovation and delivering successful products.
+      </p>
+    </div>
+    <!--My goals in life section-->
+    <div id="goals">
+      <h2>Goals</h2>
+      <p>
+        My ultimate goal is to <span class="highlight">use technology to improve lives</span> and become an accomplished
+        software engineer, contributing to innovative projects.
+      </p>
+    </div>
+  </div>
+  <script src="./scripts/slideshowHobby.js"></script>
+
+</body>
+
+</html>
+
+<!--
+Resources:
+- https://www.w3schools.com/howto/howto_js_slideshow.asp
+- https://www.courtsoftheworld.com/canada/toronto/dufferin-grove/
+- https://www.amazon.ca/Shogun-Epic-Novel-Japan-Asian/dp/B07148KYKG
+- https://www.nowplayingtoronto.com/venue/scotiabank-theatre/
+- https://www.freecodecamp.org/news/how-to-create-a-slideshow/
+-->
